@@ -16,7 +16,7 @@ public class App {
         Simulator simulator = new Simulator(tableTop, toyRobot);
 
         System.out.println("Toy Robot Simulator");
-        System.out.println("Enter a command, Valid commands are:");
+        System.out.println("Enter a command below:");
         System.out.println("\'PLACE X,Y,NORTH|SOUTH|EAST|WEST\', MOVE, LEFT, RIGHT, REPORT or EXIT");
 
         Scanner scanner = new Scanner(System.in);
