@@ -1,8 +1,5 @@
-package com.cnn.unit;
+package com.cnn.model;
 
-import com.cnn.model.Position;
-import com.cnn.model.TableTop;
-import com.cnn.model.TableTopImpl;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

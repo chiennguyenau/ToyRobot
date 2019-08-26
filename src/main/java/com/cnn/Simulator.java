@@ -21,25 +21,25 @@ public class Simulator {
         this.toyRobot = toyRobot;
     }
 
-    private void placeRobot(Position position, Direction direction) {
+    protected void placeRobot(Position position, Direction direction) {
         if ((position != null) && (direction != null) && (tableTop.isValidPosition(position))) {
             this.toyRobot.place(position, direction);
         }
     }
 
-    private void moveRobot(@NotNull ToyRobot toyRobot) {
+    protected void moveRobot(@NotNull ToyRobot toyRobot) {
         if ((toyRobot.getPosition() != null) && tableTop.isValidPosition(toyRobot.nextPosition())) {
             toyRobot.move();
         }
     }
 
-    private void turnRobotLeft(@NotNull ToyRobot toyRobot) {
+    protected void turnRobotLeft(@NotNull ToyRobot toyRobot) {
         if (toyRobot.getDirection() != null) {
             toyRobot.left();
         }
     }
 
-    private void turnRobotRight(@NotNull ToyRobot toyRobot) {
+    protected void turnRobotRight(@NotNull ToyRobot toyRobot) {
         if (toyRobot.getDirection() != null) {
             toyRobot.right();
         }

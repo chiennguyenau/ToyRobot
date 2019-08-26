@@ -1,8 +1,5 @@
-package com.cnn.unit;
+package com.cnn.model;
 
-import com.cnn.model.Direction;
-import com.cnn.model.Position;
-import com.cnn.model.ToyRobotImpl;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
