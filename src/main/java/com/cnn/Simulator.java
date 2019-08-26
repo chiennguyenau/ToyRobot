@@ -11,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Simulator {
-    private static final Pattern pattern = Pattern.compile("^PLACE(\\s)(\\d+)(,)(\\d+)(,)(EAST|WEST|NORTH|SOUTH)$");
+    private final Pattern pattern = Pattern.compile("^PLACE(\\s)(\\d+)(,)(\\d+)(,)(EAST|WEST|NORTH|SOUTH)$");
 
     private TableTop tableTop;
     private ToyRobot toyRobot;
